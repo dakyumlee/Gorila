@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+public class Gorila {
+
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.println("짠-! 당신은 정글에서 발견된 음흉한 고릴라를 마주쳤습니다. 유혹에 빠지고 싶지 않다면 우가부가두 춤을 3번 추셔야 합니다. 어떻게 하시겠습니까?");
+			System.out.println("1. 춤을 춘다.");
+			System.out.println("2. 춤을 추지 않는다.");
+			System.out.println(">>");
+			int choice1 = sc.nextInt();
+			
+			if (choice1 == 1) {
+				System.out.println("저런…! 음흉한 고릴라, 당신의 호감을 사려고 지긋이 바라보고 있습니다. 어서 이 곳을 달아나야만 하려던 찰나, 고릴라가 당신에게 말을 걸어옵니다.");
+				System.out.println("“Hey, 몇살? 우우.”");
+				System.out.println("1. 그런거 알아서 뭐하시게요…");
+				System.out.println("2. 넌 몇살이나 먹었는데 이놈의자식아");
+				System.out.println("3. If true “you want to die” if false “you are ugly”");
+				System.out.println(">>");
+				int choice2 = sc.nextInt();
+				
+				if (choice2 == 1)	{
+					System.out.println("귀여운 외모에 그렇지 못한 태도와 말투로 당신의 매력에 고릴라는 더욱 흠뻑 빠져버렸습니다…! 걸크러쉬로는 이 흥분한 생물을 침착시킨 못할 것 같습니다. 그가 실망할만한 다른 모습을 보여줘야 될거 같습니다. ");
+					System.out.println("“오우 베이비 입담이 좀 거친걸?? 가라앉지 않는 날 제어해줄 귀여운 아이가 필요했던 찰나 였거든.”");
+					System.out.println("1. 저기요.. 아깐 진짜 당신 너무 무서워서 그랬던거구여… 정중하게 이러지 말아줬음 좋겠어요 죄송합니다…");
+					System.out.println("2. 이 고릴라 녀석이 말귀를 못 알아 먹는군.. 진짜 같은 영장류라고 봐주니까 진짜 뵈는게 없구나 바나나 100일 치 압수를 해줘야 정신을 차리겠니");
+					System.out.println("3. (3일 안 감은 머리를 보여주고 비보잉 댄스를 추며) “code error , your words , interpreted , make me dance 1 2 3“");
+					System.out.println(">>");
+					int choice3 = sc.nextInt();
+					System.out.println("고릴라와의 결혼을 축하드립니다. 당신은 정글의 공주가 되었습니다.");
+				}
+					
+				else	{
+					System.out.println("고릴라가 무서운 표정으로 당신을 내려다 보다가 당신에게 한 가지 제안을 합니다. “Hey, 너 때문에 흥이 깨져버렸잖아. 1 부터 5 중에 나와 같은 숫자를 말하면 목숨만은 살려주지.”");
+					System.out.println("당신이 말할 숫자는? >>");
+					int choice3 = sc.nextInt();
+					int a = (int) Math.random() * 5 + 1;
+					System.out.println("고릴라가 말한 숫자는 "+ a +" 입니다.");
+						
+						if (a == choice3)	{
+							System.out.println("당신은 살았습니다. 고릴라는 유유히 자연으로 돌아갔습니다.");
+							System.out.println("게임이 종료되었습니다.");
+						}
+						else {
+							System.out.println("당신은 죽었습니다. 당신은 고릴라에게 갈기갈기 찢겼습니다.");
+							System.out.println("게임이 종료되었습니다.");
+						}
+					}
+				}
+			else	{
+				System.out.println("고릴라가 무서운 표정으로 당신을 내려다 보다가 당신에게 한 가지 제안을 합니다. “Hey, 너 때문에 흥이 깨져버렸잖아. 1 부터 5 중에 나와 같은 숫자를 말하면 목숨만은 살려주지.”");
+				System.out.println("당신이 말할 숫자는? >>");
+				int choice2 = sc.nextInt();
+				int a = (int) Math.random() * 5 + 1;
+				System.out.println("고릴라가 말한 숫자는 "+ a +" 입니다.");
+				
+				if (a == choice2)	{
+					System.out.println("당신은 살았습니다. 고릴라는 유유히 자연으로 돌아갔습니다.");
+					System.out.println("게임이 종료되었습니다.");
+				}
+				else {
+					System.out.println("당신은 죽었습니다. 당신은 고릴라에게 갈기갈기 찢겼습니다.");
+					System.out.println("게임이 종료되었습니다.");
+				}
+			}
+				
+			sc.close();
+			}
+		}
